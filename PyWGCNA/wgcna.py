@@ -3007,7 +3007,7 @@ class WGCNA(GeneExp):
                         ax_legend.axis('off')
                         fig.add_subplot(ax_legend)
                     else:
-                        axs[0, 0].scatter(x, y, c=color, cmap=self.metadataColors[m].get_cmap(),
+                        axs[0, 0].scatter(x, y, c=color, cmap='tab20,
                                           s=1600, marker='s')
 
                         ax_legend = plt.Subplot(fig, axs_legend[len(metadata) - 1 - metadata.index(m)])
